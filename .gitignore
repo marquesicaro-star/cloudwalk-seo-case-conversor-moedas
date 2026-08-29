@@ -1,0 +1,17 @@
+.DS_Store
+Thumbs.db
+.env
+.env.*
+node_modules/
+dist/
+__pycache__/
+*.py[cod]
+analysis/outputs/
+analysis/data/
+*.xlsx
+*.log
+
+# O dataset fornecido no teste não faz parte do repositório público.
+organic-competitors.csv
+organic-keywords.csv
+top-pages.csv

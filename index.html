@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conversor de Moedas Online e Gratuito | InfinitePay</title>
+    <meta name="description" content="Converta moedas com uma taxa de referência datada, ajuste a taxa se precisar e estime o valor em reais de uma compra internacional." />
+    <meta name="robots" content="index,follow,max-image-preview:large" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Conversor de Moedas Online e Gratuito | InfinitePay" />
+    <meta property="og:description" content="Converta moedas com fonte e data visíveis e use uma taxa manual quando precisar." />
+    <meta property="og:url" content="https://www.infinitepay.io/materiais/conversor-de-moedas" />
+    <link rel="canonical" href="https://www.infinitepay.io/materiais/conversor-de-moedas" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Conversor de Moedas InfinitePay",
+        "description": "Conversor de moedas com taxa de referência datada e opção de taxa manual.",
+        "url": "https://www.infinitepay.io/materiais/conversor-de-moedas",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "Web",
+        "isAccessibleForFree": true
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Como chegar a uma estimativa em outra moeda?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Informe o valor que você tem, escolha a moeda em que quer ver o resultado e selecione Ver conversão. A página apresenta uma estimativa com a taxa e a data da referência." }
+          },
+          {
+            "@type": "Question",
+            "name": "Qual taxa serve como referência?",
+            "acceptedAnswer": { "@type": "Answer", "text": "A página usa uma fotografia datada das taxas de referência do Banco Central Europeu. A fonte e a data aparecem junto ao resultado." }
+          },
+          {
+            "@type": "Question",
+            "name": "A estimativa inclui IOF e outras taxas?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Não. A estimativa não inclui IOF, spread, taxa da bandeira ou outros encargos de uma transação." }
+          },
+          {
+            "@type": "Question",
+            "name": "Por que eu posso pagar um valor diferente?",
+            "acceptedAnswer": { "@type": "Answer", "text": "O valor final depende da taxa aplicada no processamento, do IOF e de eventuais encargos. Confirme sempre as condições do meio de pagamento e o comprovante." }
+          },
+          {
+            "@type": "Question",
+            "name": "Depois da primeira conversão, posso informar outra taxa?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Sim. Depois de calcular, abra Já tem uma taxa? Use no cálculo, informe quanto uma unidade da moeda de origem equivale na moeda de destino e aplique a taxa manual." }
+          },
+          {
+            "@type": "Question",
+            "name": "Quais moedas estão disponíveis?",
+            "acceptedAnswer": { "@type": "Answer", "text": "O protótipo oferece as moedas publicadas no snapshot de referência do Banco Central Europeu. Isso não representa todas as moedas existentes." }
+          },
+          {
+            "@type": "Question",
+            "name": "O Cartão de Crédito InfinitePay funciona no exterior?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Segundo a página oficial, o Cartão de Crédito InfinitePay é internacional e pode ser usado no exterior ou em sites estrangeiros. O cartão é sujeito à aprovação." }
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="https://www.infinitepay.io/" aria-label="InfinitePay — página inicial"><img src="https://cdn.prod.website-files.com/65c1399ac999a342139b5069/65c1399ac999a342139b5434_logo_brlc_preto.svg" alt="InfinitePay" width="151" height="32" /></a>
+        <nav class="main-nav" aria-label="Navegação principal">
+          <a href="https://www.infinitepay.io/materiais">Ferramentas</a>
+          <a href="https://www.infinitepay.io/maquininha-celular">Tudo para vender</a>
+          <a href="https://www.infinitepay.io/conta">Conta Digital</a>
+          <a href="https://www.infinitepay.io/blog">Recursos</a>
+        </nav>
+        <a class="header-cta" href="https://www.infinitepay.io/materiais">Ver ferramentas</a>
+        <a class="header-login" href="https://app.infinitepay.io/">Login</a>
+      </div>
+    </header>
+
+    <main id="conteudo">
+      <div class="breadcrumb" aria-label="Navegação estrutural">
+        <a href="https://www.infinitepay.io/">Início</a><span aria-hidden="true">›</span>
+        <a href="https://www.infinitepay.io/materiais-categoria/calculadoras">Calculadoras</a><span aria-hidden="true">›</span>
+        <span aria-current="page">Conversor de moedas</span>
+      </div>
+
+      <section class="hero" aria-labelledby="page-title">
+        <div class="hero-copy">
+          <p class="category-label">Calculadoras</p>
+          <h1 id="page-title">Conversor de moedas</h1>
+          <p class="hero-intro">Quer comparar um preço, organizar uma viagem ou apenas entender um valor em outra moeda? Informe o valor e veja uma estimativa clara, com taxa e data visíveis.</p>
+        </div>
+
+        <div class="converter-shell" id="calculadora">
+          <form id="converter-form" class="converter-card">
+            <div class="card-heading">
+              <h2>Converta um valor entre moedas</h2>
+              <p>Escolha as moedas e veja uma estimativa em segundos.</p>
+              <div class="tool-meta" aria-label="Informações da ferramenta">
+                <a href="#qual-cotacao">Entenda o cálculo</a>
+                <span>Referência de 26/08/2026</span>
+              </div>
+            </div>
+
+            <div class="field-group amount-group">
+              <label for="amount">Quanto você tem?</label>
+              <input id="amount" name="amount" type="text" inputmode="decimal" value="100,00" autocomplete="off" aria-describedby="amount-error" />
+              <span id="amount-error" class="field-error" role="alert"></span>
+            </div>
+
+            <div class="currency-grid">
+              <div class="field-group">
+                <label for="from-currency">Na moeda</label>
+                <select id="from-currency" name="from-currency"></select>
+              </div>
+              <button class="swap-button" id="swap-currencies" type="button" aria-label="Inverter moedas">⇄</button>
+              <div class="field-group">
+                <label for="to-currency">Quer saber em</label>
+                <select id="to-currency" name="to-currency"></select>
+              </div>
+            </div>
+
+            <button class="primary-button conversion-button" type="submit">Ver conversão</button>
+
+            <div id="post-conversion" hidden>
+              <section id="result-panel" class="result-panel" aria-live="polite" aria-atomic="true">
+                <p class="result-kicker">Este valor equivale a</p>
+                <p class="result-value" id="result-value"></p>
+                <p class="rate-line" id="rate-line"></p>
+                <p class="source-line">Taxa de referência do <a href="https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html">Banco Central Europeu</a> em <time datetime="2026-08-26">26/08/2026</time>.</p>
+                <p id="stale-warning" class="stale-warning" hidden>Esta referência tem mais de sete dias. Use uma taxa manual se precisar de uma estimativa mais recente.</p>
+              </section>
+
+              <details class="manual-rate">
+                <summary>Já tem uma taxa? Use no cálculo</summary>
+                <div class="manual-fields">
+                  <label for="manual-rate">1 <span id="manual-from">USD</span> equivale a</label>
+                  <div class="manual-input-row">
+                    <input id="manual-rate" type="text" inputmode="decimal" placeholder="Ex.: 5,40" autocomplete="off" aria-describedby="manual-rate-status" />
+                    <span id="manual-to">BRL</span>
+                  </div>
+                  <button class="text-button" id="apply-manual-rate" type="button">Aplicar taxa manual</button>
+                  <span id="manual-rate-status" class="field-status" aria-live="polite"></span>
+                </div>
+              </details>
+
+              <p class="estimate-note">Esta é uma estimativa. O valor final pode variar conforme a taxa aplicada na transação, IOF e processamento.</p>
+
+              <div class="context-prompt" aria-labelledby="context-title">
+                <p class="context-eyebrow">Próximo passo opcional</p>
+                <h2 id="context-title">Vai usar este valor em uma compra internacional?</h2>
+                <div class="context-actions" role="group" aria-label="Contexto da conversão">
+                  <button class="context-button" id="international-yes" type="button">Sim, vou fazer uma compra</button>
+                  <button class="context-button secondary" id="international-no" type="button">Não, só precisava converter</button>
+                </div>
+                <div id="card-bridge" class="card-bridge" hidden>
+                  <p class="bridge-label">Para continuar sua jornada</p>
+                  <h3>Compre no exterior com o Cartão de Crédito InfinitePay</h3>
+                  <p>Virtual, internacional e sem anuidade. Sujeito à aprovação. A conversão acima continua sendo uma estimativa, não o valor final da compra.</p>
+                  <a class="primary-button link-button" href="https://www.infinitepay.io/cartao-de-credito">Conhecer o cartão de crédito</a>
+                  <a class="bridge-article-link related-content-link" data-content-id="como-usar-cartao-virtual" data-journey-stage="international_purchase" href="https://www.infinitepay.io/blog/como-usar-cartao-virtual">Veja como usar um cartão virtual em compras online</a>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section class="article-layout" aria-label="Informações sobre o conversor">
+        <aside class="topics-rail">
+          <p>Tópicos</p>
+          <nav aria-label="Tópicos desta página">
+            <a href="#como-usar">Como chegar a uma estimativa?</a>
+            <a href="#qual-cotacao">Qual taxa usar?</a>
+            <a href="#valor-final">Por que o valor muda?</a>
+            <a href="#compra-internacional">Como planejar uma compra?</a>
+          </nav>
+        </aside>
+
+        <article class="article-content">
+          <section id="como-usar">
+            <h2>Como chegar a uma boa estimativa?</h2>
+            <p>Informe quanto você tem, escolha a moeda em que quer ver o resultado e selecione <strong>Ver conversão</strong>. Você recebe uma estimativa acompanhada da taxa, da fonte e da data da referência.</p>
+            <ol>
+              <li><strong>Digite o valor</strong> que quer entender.</li>
+              <li><strong>Escolha as moedas</strong> do seu cálculo.</li>
+              <li><strong>Confira a estimativa</strong> e quando a taxa foi publicada.</li>
+              <li><strong>Ajuste a taxa</strong> se você já recebeu outra referência.</li>
+            </ol>
+          </section>
+
+          <section id="qual-cotacao">
+            <h2>Qual taxa faz sentido para o seu cálculo?</h2>
+            <p>Para oferecer uma resposta imediata, a página parte de uma fotografia das taxas de referência publicadas pelo Banco Central Europeu. A fonte e a data ficam sempre visíveis.</p>
+            <div class="formula-box">
+              <p class="formula-label">Conversão cruzada</p>
+              <p>taxa de destino ÷ taxa de origem = taxa aplicada</p>
+            </div>
+            <p>A referência é datada e não é apresentada como cotação em tempo real.</p>
+          </section>
+
+          <section id="valor-final">
+            <h2>Por que você pode pagar um valor diferente?</h2>
+            <p>A estimativa não inclui automaticamente IOF, margem de conversão, taxa da bandeira ou outros encargos. Por isso, uma compra pode ser processada com condições diferentes da referência mostrada aqui.</p>
+            <p>Para confirmar o valor efetivo, consulte as condições do meio de pagamento e o comprovante da transação.</p>
+          </section>
+
+          <section id="compra-internacional">
+            <h2>Como chegar mais perto do valor que você vai pagar?</h2>
+            <p>Use a primeira estimativa para organizar seu orçamento. Se o seu banco, bandeira ou meio de pagamento informou outra taxa, você pode inseri-la manualmente e aproximar o cálculo do seu contexto.</p>
+            <p>A ferramenta ajuda a comparar valores. Ela não vende moeda, não realiza remessas e não substitui o valor informado pela instituição responsável pela transação.</p>
+          </section>
+        </article>
+
+        <aside class="return-rail">
+          <p>Conversor de Moedas</p>
+          <a href="#calculadora">Converter agora</a>
+        </aside>
+      </section>
+
+      <section class="journey-section" aria-labelledby="journey-title">
+        <div class="journey-heading">
+          <p class="section-label">Entenda antes de pagar</p>
+          <h2 id="journey-title">Do valor estimado ao próximo passo</h2>
+          <p>Conteúdos para interpretar a conversão sem confundir referência cambial com o valor final de uma compra.</p>
+        </div>
+        <div class="journey-grid">
+          <a class="journey-card related-content-link" data-content-id="iof-o-que-e" data-journey-stage="result_interpretation" href="https://www.infinitepay.io/blog/iof-o-que-e">
+            <span>Entenda o custo</span>
+            <h3>O que é IOF e quando ele aparece?</h3>
+            <p>Veja como o imposto pode fazer parte de operações financeiras e por que ele não está incluído nesta estimativa.</p>
+            <strong>Ler no blog</strong>
+          </a>
+          <a id="international-article-card" class="journey-card related-content-link" data-content-id="como-usar-cartao-virtual" data-journey-stage="international_purchase" href="https://www.infinitepay.io/blog/como-usar-cartao-virtual" hidden>
+            <span>Prepare a compra</span>
+            <h3>Como usar um cartão virtual em compras online?</h3>
+            <p>Confira os passos e cuidados para utilizar um cartão virtual na internet.</p>
+            <strong>Ler no blog</strong>
+          </a>
+        </div>
+      </section>
+
+      <section class="faq-section" aria-labelledby="faq-title">
+        <div class="faq-heading">
+          <p class="section-label">Perguntas frequentes</p>
+          <h2 id="faq-title">FAQ</h2>
+          <p>Respostas diretas sobre taxa, cálculo e compra internacional.</p>
+        </div>
+        <div class="faq-list">
+          <details><summary><span>Como chegar a uma estimativa em outra moeda?</span></summary><p>Informe o valor que você tem, escolha a moeda em que quer ver o resultado e selecione <strong>Ver conversão</strong>. A página apresenta uma estimativa com a taxa e a data da referência.</p></details>
+          <details><summary><span>Qual taxa serve como referência?</span></summary><p>A página usa uma fotografia datada das taxas de referência do Banco Central Europeu. A fonte e a data aparecem junto ao resultado.</p></details>
+          <details><summary><span>A estimativa inclui IOF e outras taxas?</span></summary><p>Não. A estimativa não inclui IOF, spread, taxa da bandeira ou outros encargos de uma transação.</p></details>
+          <details><summary><span>Por que eu posso pagar um valor diferente?</span></summary><p>O valor final depende da taxa aplicada no processamento, do IOF e de eventuais encargos. Confirme sempre as condições do meio de pagamento e o comprovante.</p></details>
+          <details><summary><span>Depois da primeira conversão, posso informar outra taxa?</span></summary><p>Sim. Depois de calcular, abra <strong>Já tem uma taxa? Use no cálculo</strong>, informe quanto uma unidade da moeda de origem equivale na moeda de destino e aplique a taxa manual.</p></details>
+          <details><summary><span>Quais moedas estão disponíveis?</span></summary><p>O protótipo oferece as moedas publicadas no snapshot de referência do Banco Central Europeu. Isso não representa todas as moedas existentes.</p></details>
+          <details><summary><span>O Cartão de Crédito InfinitePay funciona no exterior?</span></summary><p>Segundo a página oficial, o Cartão de Crédito InfinitePay é internacional e pode ser usado no exterior ou em sites estrangeiros. O cartão é sujeito à aprovação.</p></details>
+        </div>
+      </section>
+
+      <section class="related-section" aria-labelledby="related-title">
+        <div class="related-heading">
+          <div><p class="section-label">Ferramentas</p><h2 id="related-title">Outras ferramentas para cuidar do seu dinheiro e do seu negócio</h2></div>
+          <a href="https://www.infinitepay.io/materiais-categoria/calculadoras">Ver ferramentas</a>
+        </div>
+        <div class="related-grid">
+          <a class="tool-card" href="https://www.infinitepay.io/materiais/calculadora-de-taxas"><img src="https://cdn.prod.website-files.com/65c1399ac999a342139b5097/695d16a2d02da2c84e64d60d_OpenGraph_Calculadora%20de%20Taxas.avif" alt="" /><span>Calculadora</span><h3>Calculadora de Taxas</h3><p>Simule uma venda e entenda quanto você recebe.</p></a>
+          <a class="tool-card" href="https://www.infinitepay.io/materiais/calculadora-de-margem-de-lucro"><img src="https://cdn.prod.website-files.com/65c1399ac999a342139b5097/695d205055b2148dfc395ad9_OpenGraph_Calculadora%20de%20Margem%20de%20Lucro.avif" alt="" /><span>Calculadora</span><h3>Margem de Lucro</h3><p>Veja quanto sobra de cada venda depois dos custos.</p></a>
+          <a class="tool-card" href="https://www.infinitepay.io/materiais/calculadora-cdb"><img src="https://cdn.prod.website-files.com/65c1399ac999a342139b5097/695c2afcc0821894f11bf778_OpenGraph_Calculadora%20de%20CDB.avif" alt="" /><span>Calculadora</span><h3>Calculadora de CDB</h3><p>Simule quanto seu dinheiro pode render.</p></a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-top">
+        <a class="brand footer-brand" href="https://www.infinitepay.io/"><img src="https://cdn.prod.website-files.com/65c1399ac999a342139b5069/65c1399ac999a342139b5434_logo_brlc_preto.svg" alt="InfinitePay" width="151" height="32" /></a>
+        <nav class="footer-links" aria-label="Links institucionais">
+          <div><h2>Conta Digital</h2><a href="https://www.infinitepay.io/conta">Conta Digital</a><a href="https://www.infinitepay.io/cartao-de-credito">Cartão de Crédito</a></div>
+          <div><h2>Recursos</h2><a href="https://www.infinitepay.io/blog">Blog</a><a href="https://www.infinitepay.io/materiais">Materiais</a></div>
+          <div><h2>Ajuda</h2><a href="https://ajuda.infinitepay.io/pt-BR/">Central de Ajuda</a><a href="https://www.infinitepay.io/seguranca">Segurança</a></div>
+        </nav>
+      </div>
+      <div class="footer-bottom"><p>Protótipo funcional para o case CloudWalk. Taxas de referência não constituem oferta de câmbio.</p><p>© 2026 InfinitePay</p></div>
+    </footer>
+
+    <script src="./app.js"></script>
+    <noscript><p class="noscript-message">Ative o JavaScript para realizar os cálculos. A explicação e o FAQ permanecem disponíveis nesta página.</p></noscript>
+  </body>
+</html>
